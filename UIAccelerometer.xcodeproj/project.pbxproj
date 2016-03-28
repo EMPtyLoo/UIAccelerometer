@@ -12,7 +12,6 @@
 		61B6CA861CA9A53E00093BEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B6CA851CA9A53E00093BEB /* ViewController.m */; };
 		61B6CA891CA9A53E00093BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B6CA871CA9A53E00093BEB /* Main.storyboard */; };
 		61B6CA8B1CA9A53E00093BEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61B6CA8A1CA9A53E00093BEB /* Images.xcassets */; };
-		61B6CA8E1CA9A53E00093BEB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61B6CA8C1CA9A53E00093BEB /* LaunchScreen.xib */; };
 		61B6CA9A1CA9A53E00093BEB /* UIAccelerometerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B6CA991CA9A53E00093BEB /* UIAccelerometerTests.m */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 		61B6CA851CA9A53E00093BEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		61B6CA881CA9A53E00093BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61B6CA8A1CA9A53E00093BEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		61B6CA8D1CA9A53E00093BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		61B6CA931CA9A53E00093BEB /* UIAccelerometerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIAccelerometerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B6CA981CA9A53E00093BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61B6CA991CA9A53E00093BEB /* UIAccelerometerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAccelerometerTests.m; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				61B6CA851CA9A53E00093BEB /* ViewController.m */,
 				61B6CA871CA9A53E00093BEB /* Main.storyboard */,
 				61B6CA8A1CA9A53E00093BEB /* Images.xcassets */,
-				61B6CA8C1CA9A53E00093BEB /* LaunchScreen.xib */,
 				61B6CA7D1CA9A53E00093BEB /* Supporting Files */,
 			);
 			path = UIAccelerometer;
@@ -200,7 +197,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				61B6CA891CA9A53E00093BEB /* Main.storyboard in Resources */,
-				61B6CA8E1CA9A53E00093BEB /* LaunchScreen.xib in Resources */,
 				61B6CA8B1CA9A53E00093BEB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,14 +248,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		61B6CA8C1CA9A53E00093BEB /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				61B6CA8D1CA9A53E00093BEB /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -299,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -337,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -349,7 +337,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = UIAccelerometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -359,7 +349,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = UIAccelerometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
